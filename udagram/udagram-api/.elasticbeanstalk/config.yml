@@ -4,7 +4,7 @@ branch-defaults:
 environment-defaults:
   khadajhin:
     branch: main
-    repository: final
+    repository: udagram-api
 global:
   application_name: khadajhin
   default_ec2_keyname: null
