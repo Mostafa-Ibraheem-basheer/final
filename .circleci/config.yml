@@ -57,7 +57,7 @@ jobs:
       - checkout
       - run:
           name: Deploy App
-          # Install, build, deploy in both apps
+          # deploy both apps
           command: |
             npm run deploy
             
