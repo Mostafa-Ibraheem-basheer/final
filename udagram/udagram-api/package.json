@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "",
   "engines": {
-    "node": "14.15.0"
+    "node": "16.13.1"
   },
   "main": "server.ts",
   "scripts": {
@@ -12,7 +12,7 @@
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "deploy": "npm run build && cd www && eb init api --region us-east-1 && eb deploy Api-env",
+    "deploy": "npm run build && cd www && eb init udagram-api --region us-east-1 && eb deploy Udagram-api-env",
     "build": "npm install . && npm run clean && npm run tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
