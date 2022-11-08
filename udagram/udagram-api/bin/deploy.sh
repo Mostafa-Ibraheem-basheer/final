@@ -1,4 +1,1 @@
-cd www
-eb init --region us-east-1
-eb use api
-eb deploy Api-env
+cp package.json www && cd www && eb init udagram-api --region us-east-1 && eb deploy Udagram-api-env
