@@ -44,6 +44,12 @@ jobs:
           name: API Build
           command: |
             npm run api:build
+      # Testing the front-end      
+      - run:
+          name: Front-end Testing
+          command: |
+            npm run frontend:test
+            npm run frontend:e2e     
   # deploy step will run only after manual approval
   deploy:
     docker:
